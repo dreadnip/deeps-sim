@@ -119,5 +119,6 @@ function sim_dps($style, $ticks, $walking = false, $stun_immune = false){
 }
 
 $abilities = load_abilities();
-$result = sim_dps('ranged', 500, true, false); //style, duration(in ticks) | optional: walking(true/false), stun immune(true/false);
-echo json_encode($result);
+$result = sim_dps('magic', 500, true, false); //style, duration(in ticks) | optional: walking(true/false), stun immune(true/false);
+echo "<pre>";
+print_r($result);
